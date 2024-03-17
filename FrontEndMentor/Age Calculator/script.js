@@ -117,6 +117,9 @@ function calculateAge() {
   let birthMonth = parseInt(document.getElementById("month").value);
   let birthDay = parseInt(document.getElementById("day").value);
 
+  if (isNaN(birthYear) || isNaN(birthMonth) || isNaN(birthDay)) {
+    return false;
+  }
   //Check input validity
   let flag = isValidDate(birthYear, birthMonth, birthDay);
   if (!flag) return flag;
