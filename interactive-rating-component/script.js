@@ -33,7 +33,7 @@ submitBtn.addEventListener("click", () => {
 function isRated() {
   return optionSelected;
 }
-
+let ratingOptions = document.querySelectorAll("[id='rating']");
 let lastSelectedidx = 0;
 ratingOptions.forEach((option, index) => {
   option.addEventListener("click", () => {
