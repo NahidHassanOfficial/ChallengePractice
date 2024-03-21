@@ -19,5 +19,5 @@
   
   - [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP).
   - [Solution URL](https://github.com/NahidHassanOfficial/FrontendMentor-Challenges/tree/main/blogr-landing-page)
-  - [Live Site URL](https://nahidhassanofficial.github.io/FrontendMentor-Challenges/bloger-landing-page/)
+  - [Live Site URL](https://nahidhassanofficial.github.io/FrontendMentor-Challenges/blogr-landing-page/)
 </details>
