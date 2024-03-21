@@ -4,6 +4,7 @@ let submitBtn = document.querySelector("button");
 let ratedStar = 0;
 let optionSelected = false;
 let successfulMsg;
+let submitDiv = document.querySelector(".submitDiv");
 
 function isRated() {
   successfulMsg = `<div class="flex justify-center align-items-center ">
@@ -29,7 +30,12 @@ submitBtn.addEventListener("click", () => {
     isRated();
     ratedSuccess.innerHTML = successfulMsg;
   } else {
-    console.log("Rate First");
+    if (submitDiv.children.length == 1) {
+      let errorMsg = document.createElement("p");
+      errorMsg.innerHTML = `Please rate first`;
+      submitDiv.appendChild(errorMsg);
+      errorMsg.classList.add("text-sm", "text-red-500", "mt-3");
+    }
   }
 });
 
