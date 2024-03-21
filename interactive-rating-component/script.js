@@ -1,7 +1,7 @@
 let feedback = document.querySelector(".feedback");
 let ratedSuccess = document.querySelector(".rated-successful");
 let submitBtn = document.querySelector("button");
-let ratedStar = 0;
+let ratedStar = -1;
 let optionSelected = false;
 let successfulMsg;
 let submitDiv = document.querySelector(".submitDiv");
@@ -36,6 +36,7 @@ submitBtn.addEventListener("click", () => {
       submitDiv.appendChild(errorMsg);
       errorMsg.classList.add("text-sm", "text-red-500", "mt-3");
     }
+    console.log(ratedStar);
   }
 });
 
@@ -60,8 +61,8 @@ ratingOptions.forEach((option, index) => {
           ratingOptions[i].classList.add("bg-orange-500");
           ratingOptions[i].classList.add("text-white");
         }
-      }
-      ratedStar = index;
+        ratedStar = index;
+      } else ratedStar = -1;
     } else {
       optionSelected = true;
       // If the clicked option is not selected, apply styles up to the clicked index
