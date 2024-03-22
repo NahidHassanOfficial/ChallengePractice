@@ -16,12 +16,12 @@
   <title>Frontend Mentor | [Blogr]</title>
 </head>
 
-<body class="font-overpass">
-  <div class="w-full">
-    <main class="bg-gradient-to-r from-red-400 to-red-500 rounded-bl-[150px] h-[600px]">
-      <div class=" bg-no-repeat bg-center" style="background-image: url('images/bg-pattern-intro-desktop.svg');">
-        <div class="navbar pt-10">
-          <div class="flex items-center justify-evenly">
+<body class="">
+  <div class="">
+    <main class="bg-gradient-to-r from-red-400 to-red-500 rounded-bl-[150px] h-[600px] relative overflow-hidden">
+      <div class="absolute inset-0 bg-[url('images/bg-pattern-intro-mobile.svg')] bg-no-repeat bg-center">
+        <div class="px-5 pt-3 ">
+          <div class="nav-desktop hidden lg:flex items-center justify-evenly pt-10">
             <div><img src="images/logo.svg" alt=""></div>
             <div class="flex">
               <div class="mx-10 group">
@@ -66,12 +66,16 @@
                 Up</a>
             </div>
           </div>
+          <div class="nav-mobile flex justify-between lg:hidden">
+            <div class="mt-10"><img src="images/logo.svg" alt=""></div>
+            <div class="mt-10"><img src="images/icon-hamburger.svg" alt=""></div>
+          </div>
         </div>
-        <div class="flex-col justify-center align-center text-center text-white mt-40">
 
-          <h1 class="text-6xl font-bold">A modern publishing platform</h1>
-          <p class="text-2xl mt-3">Grow your audience and build your online brand</p>
-          <div class="mt-10 space-x-5">
+        <div class="flex-col justify-center align-center text-center text-white mt-20 lg:mt-40">
+          <h1 class="text-4xl lg:text-6xl font-bold">A modern publishing platform</h1>
+          <p class="text-2xl mt-10 lg:mt-3">Grow your audience and build your online brand</p>
+          <div class="mt-20 space-x-5">
             <button
               class="w-fit h-10 px-5 bg-white rounded-full text-red-400 font-bold hover:bg-red-500 hover:text-white">Start
               for
@@ -84,108 +88,105 @@
       </div>
     </main>
 
-    <section class="">
-      <div class="h-full py-10 flex flex-col justify-center items-center">
-        <div class="text-center text-gray-700 text-4xl font-bold mb-10 mt-32">Designed for the future</div>
-        <div class="flex justify-center items-start w-full">
-          <div class="w-1/2 ml-48 mt-32 flex flex-col space-y-10">
-            <div class="w-2/3">
-              <h1 class="text-3xl text-gray-700 font-bold">Introducing an extensible editor</h1>
+    <section class="first-section mx-10 my-20 text-justify lg:h-fit">
+      <div class="flex flex-col">
+        <div class="text-4xl text-gray-700 font-bold text-center">Designed for the future</div>
+        <img class="block lg:hidden transform scale-125 lg:scale-0" src="images/illustration-editor-mobile.svg" alt="">
+        <div class="space-y-10 lg:space-y-0 lg:flex lg:flex-row lg:justify-center lg:items-center">
+          <div class="lg:w-1/2">
+            <div class="">
+              <h1 class="text-3xl text-gray-700 font-bold text-center">Introducing an extensible editor</h1>
               <p class="mt-5 text-gray-500">Blogr features an exceedingly intuitive interface which lets you focus on
-                one
-                thing: creating content. The editor supports management of multiple blogs and allows easy manipulation
-                of
-                embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to
-                add
-                functionality or change the looks of a blog.</p>
+                one thing: creating content. The editor supports management of multiple blogs and allows easy
+                manipulation
+                of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways
+                to
+                add functionality or change the looks of a blog.</p>
             </div>
-            <div class="w-2/3">
-              <h1 class="text-3xl text-gray-700 font-bold">Robust content management</h1>
+            <div class="">
+              <h1 class="text-3xl text-gray-700 font-bold text-center">Robust content management</h1>
               <p class="mt-5 text-gray-500">Flexible content management enables users to easily move through posts.
-                Increase
-                the usability of your blog by adding customized categories, sections, format, or flow. With this
+                Increase the usability of your blog by adding customized categories, sections, format, or flow. With
+                this
                 functionality, you’re in full control.</p>
             </div>
           </div>
-          <div class="w-1/2 -mr-52">
-            <img src="images/illustration-editor-desktop.svg" alt="Editor Illustration" class="h-auto max-h-full">
+          <div class="hidden lg:block lg:w-1/2 ">
+            <img class="" src="images/illustration-editor-desktop.svg">
           </div>
         </div>
       </div>
     </section>
 
-    <section class="h-full mb-20">
-      <div
-        class="h-[350px] bg-[#393a58] rounded-bl-[100px] rounded-tr-[100px] bg-origin-content bg-no-repeat bg-left-bottom flex justify-center items-center"
-        style="background-image: url('images/bg-pattern-circles.svg');">
+    <section class="second-section h-full">
+      <div class="h-[500px] bg-[#393a58] rounded-bl-[100px] rounded-tr-[100px] 
+        bg-bottom bg-no-repeat bg-[url('images/bg-pattern-circles.svg')] 
+        flex flex-col justify-center items-center px-10 lg:flex-row lg:h-[350px]">
 
-        <div class="w-1/2 ml-32">
-          <img src="images/illustration-phones.svg" height="500px" width="500px">
+        <div class="lg:w-1/2">
+          <img src="images/illustration-phones.svg" class="">
         </div>
-        <div class="w-1/2 pr-44">
-          <h1 class="text-3xl text-white font-bold">State of the Art Infrastructure</h1>
-          <p class="mt-5 text-gray-300">With reliability and speed in mind, worldwide data centers provide the
-            backbone
-            for ultra-fast connectivity.
-            This ensures your site will load instantly, no matter where your readers are, keeping your site
-            competitive.
+        <div class="lg:w-1/2">
+          <h1 class="text-3xl text-white font-bold text-center">State of the Art Infrastructure</h1>
+          <p class="mt-5 mb-52 text-white text-justify">With reliability and speed in mind, worldwide data centers
+            provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter
+            where your readers are, keeping your site competitive.
           </p>
-
         </div>
       </div>
     </section>
-    <section class="h-full py-10 ">
-      <div class="flex ">
-        <img class="-ml-72 " src="images/illustration-laptop-desktop.svg" height="1000px" width="1000px">
-        <div class="text-left w-1/2 ml-36 mt-52 space-y-20">
-          <div class="w-2/3">
-            <h1 class="text-3xl text-gray-700 font-bold">Free, open, simple</h1>
+    <section class="third-section mx-10 my-20 text-justify">
+      <div class="flex flex-col lg:flex-row lg:items-center">
+        <img class="hidden lg:block lg:w-1/2" src="images/illustration-laptop-desktop.svg">
+        <img class="block lg:hidden transform scale-150" src="images/illustration-laptop-mobile.svg" height="1000px"
+          width="1000px">
+        <div class="space-y-10 lg:w-1/2">
+          <div class="">
+            <h1 class="text-3xl text-gray-700 font-bold text-center">Free, open, simple</h1>
             <p class="mt-5 text-gray-500">Blogr is a free and open source application backed by a large community of
-              helpful developers. It supports
-              features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
-              tools,
-              and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+              helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media
+              integration, third-party commenting
+              tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to
+              learn.
             </p>
           </div>
-          <div class="w-2/3">
-            <h1 class="text-3xl text-gray-700 font-bold">Powerful tooling</h1>
-            <p class="mt-5 text-gray-500">Batteries included. We built a simple and straightforward CLI tool that makes
-              customization and
-              deployment a
-              breeze,
-              but
-              capable of producing even the most complicated sites.
+          <div class="">
+            <h1 class="text-3xl text-gray-700 font-bold text-center">Powerful tooling</h1>
+            <p class="mt-5 text-gray-500">Batteries included. We built a simple and straightforward CLI tool that
+              makes
+              customization and deployment a breeze, but capable of producing even the most complicated sites.
             </p>
           </div>
         </div>
       </div>
     </section>
     <footer>
-      <div class=" bg-gray-900 text-white py-32 flex justify-evenly rounded-tr-[150px]">
-        <div><img src="images/logo.svg" alt=""></div>
-        <div>
-          <h1 class="">Product</h1>
-          <ul class="list-none mt-5 text-gray-500 leading-8">
-            <li class="hover:text-white">Overview</li>
+      <div
+        class="bg-gray-900  py-32 rounded-tr-[150px] flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-start">
+        <div class=""><img src=" images/logo.svg" alt=""></div>
+        <div class="mt-10 lg:mt-0">
+          <h1 class="text-white text-lg font-bold">Product</h1>
+          <ul class="mt-5 text-gray-500 leading-8"">
+            <li class=" hover:text-white">Overview</li>
             <li class="hover:text-white">Pricing</li>
             <li class="hover:text-white">Marketplace</li>
             <li class="hover:text-white">Features</li>
             <li class="hover:text-white">Integrations</li>
           </ul>
         </div>
-        <div>
-          <h1>Company</h1>
-          <ul class="mt-5 text-gray-500 leading-8">
-            <li class="hover:text-white">About</li>
+        <div class="mt-10 lg:mt-0">
+          <h1 class="text-white text-lg font-bold">Company</h1>
+          <ul class="mt-5 text-gray-500 leading-8"">
+            <li class=" hover:text-white">About</li>
             <li class="hover:text-white">Team</li>
             <li class="hover:text-white">Blog</li>
             <li class="hover:text-white">Careers</li>
           </ul>
         </div>
-        <div>
-          <h1>Connect</h1>
-          <ul class="mt-5 text-gray-500 leading-8">
-            <li class="hover:text-white">Contact</li>
+        <div class="mt-10 lg:mt-0">
+          <h1 class="text-white text-lg font-bold">Connect</h1>
+          <ul class="mt-5 text-gray-500 leading-8"">
+            <li class=" hover:text-white">Contact</li>
             <li class="hover:text-white">Newsletter</li>
             <li class="hover:text-white">LinkedIn</li>
           </ul>
