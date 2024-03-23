@@ -16,9 +16,10 @@
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 
-<body class="bg-[#c5e4e7] font-spacemono h-screen my-5 lg:my-0 flex flex-col justify-center items-center gap-10">
+<body
+  class="bg-[#c5e4e7] font-spacemono sm:h-full lg:h-screen my-5 lg:my-0 flex flex-col justify-center items-center gap-10">
   <div class=""><img src="images/logo.svg" alt=""></div>
-  <div class="bg-white w-full rounded-3xl p-8 lg:flex lg:w-1/2 lg:gap-5">
+  <div class="bg-white w-full rounded-3xl p-8 lg:flex lg:w-1/2 lg:gap-5 lg:space-x-5">
 
     <div class="flex flex-col gap-5 lg:w-1/2">
       <div>
@@ -32,15 +33,15 @@
       </div>
       <div>
         <h1 class="text-[#00474b] mb-3">Select Tip %</h1>
-        <div class="grid grid-cols-2 gap-5 text-center text-white text-xl font-bold tips">
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 text-center text-white text-lg font-bold tips">
           <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] hover:text-[#00474b]">5%</div>
           <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] hover:text-[#00474b]">10%</div>
           <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] hover:text-[#00474b]">15%</div>
           <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] hover:text-[#00474b]">20%</div>
           <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] hover:text-[#00474b]">25%</div>
           <input
-            class="bg-[#f3f8fb] text-[#00474b] placeholder:text-[#577671] placeholder:text-xl placeholder:font-bold 
-            placeholder:text-center  p-2 rounded-lg focus:outline-none border focus:ring-1 focus:border-[#26c2ad] hover:text-[#00474b] px-5 text-right"
+            class="bg-[#f3f8fb] text-[#00474b] placeholder:text-[#577671] placeholder:text-lg placeholder:font-bold 
+            placeholder:text-center  py-2 px-1 rounded-lg focus:outline-none border focus:ring-1 focus:border-[#26c2ad] hover:text-[#00474b]  text-right"
             type="text" placeholder="Custom" id="custom-tip">
         </div>
       </div>
@@ -59,8 +60,8 @@
     </div>
 
 
-    <div class="mt-5 lg:w-1/2">
-      <div class="bg-[#00474b] rounded-xl p-5 flex flex-col gap-5 lg:h-full lg:justify-between">
+    <div class="mt-7 lg:mt-0 lg:w-1/2">
+      <div class="bg-[#00474b] rounded-xl px-5 py-10 flex flex-col gap-5 lg:h-full lg:justify-between">
         <div class="flex flex-col gap-5 lg:mt-2">
           <div class="flex justify-between items-center">
             <div>
