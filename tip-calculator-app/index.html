@@ -32,12 +32,12 @@
       </div>
       <div>
         <h1 class="text-[#00474b] mb-3">Select Tip %</h1>
-        <div class="grid grid-cols-2 gap-5 text-center text-white text-xl font-bold">
-          <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] active:bg-[#26c2ad] hover:text-[#00474b]">5%</div>
-          <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] active:bg-[#26c2ad] hover:text-[#00474b]">10%</div>
-          <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] active:bg-[#26c2ad] hover:text-[#00474b]">15%</div>
-          <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] active:bg-[#26c2ad] hover:text-[#00474b]">20%</div>
-          <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] active:bg-[#26c2ad] hover:text-[#00474b]">25%</div>
+        <div class="grid grid-cols-2 gap-5 text-center text-white text-xl font-bold tips">
+          <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] hover:text-[#00474b]">5%</div>
+          <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] hover:text-[#00474b]">10%</div>
+          <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] hover:text-[#00474b]">15%</div>
+          <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] hover:text-[#00474b]">20%</div>
+          <div class="bg-[#00474b] p-2 rounded-lg hover:bg-[#9fe8df] hover:text-[#00474b]">25%</div>
           <input
             class="bg-[#f3f8fb] text-[#00474b] placeholder:text-[#577671] placeholder:text-xl placeholder:font-bold 
             placeholder:text-center  p-2 rounded-lg focus:outline-none border focus:ring-1 focus:border-[#26c2ad] hover:text-[#00474b] px-5 text-right"
@@ -47,7 +47,7 @@
       <div>
         <div class="flex justify-between">
           <h1 class="text-[#00474b] mb-1"> Number of People</h1>
-          <p class="text-red-500 text-sm hidden" id="person-invalid">Can't be Zero</p>
+          <p class="text-red-500 text-sm hidden" id="people-invalid">Can't be Zero</p>
         </div>
         <div class="relative">
           <img class="absolute inset-y-0 left-3 top-3.5" src="images/icon-person.svg" alt="">
@@ -67,7 +67,7 @@
               <h1 class="text-white">Tip Amount</h1>
               <p class="text-gray-400 text-sm">/ person</p>
             </div>
-            <p class="text-2xl text-[#26c2ad] font-extrabold">$0.00</p>
+            <p class="text-2xl text-[#26c2ad] font-extrabold" id="tip-person">$0.00</p>
           </div>
 
           <div class="flex justify-between items-center">
@@ -75,11 +75,11 @@
               <h1 class="text-white">Total</h1>
               <p class="text-gray-400 text-sm">/ person</p>
             </div>
-            <p class="text-2xl text-[#26c2ad] font-extrabold ">$0.00</p>
+            <p class="text-2xl text-[#26c2ad] font-extrabold " id="bill-person">$0.00</p>
           </div>
         </div>
-        <button
-          class="bg-[#0d686d] active:bg-[#26c2ad] text-[#00474b] p-2 rounded-lg font-bold hover:bg-[#9fe8df]">RESET</button>
+        <button class="bg-[#0d686d] text-[#00474b] p-2 rounded-lg font-bold hover:bg-[#9fe8df]"
+          id="reset">RESET</button>
       </div>
     </div>
 
