@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+</head>
+
+<body class="w-screen font-poppins">
+  <div class="flex flex-col">
+    <section class="hero h-full py-10">
+      <nav class="px-5 ">
+        <nav class="desktop hidden lg:flex justify-between px-36">
+          <div class="flex space-x-10">
+            <img src="images/logo.svg" alt="">
+            <div class="text-gray-400 text-md font-medium flex space-x-5">
+              <a class="hover:text-gray-900" href="">Features</a>
+              <a class="hover:text-gray-900" href="">Pricing</a>
+              <a class="hover:text-gray-900" href="">Resources</a>
+            </div>
+          </div>
+          <div>
+            <a class=" text-gray-400 hover:text-[#2bd1cf] text-md font-medium py-2 px-5 rounded-full" href="">Login</a>
+            <a class="bg-[#2bd1cf] hover:bg-[#9ce2e2] text-white text-md font-medium py-2 px-5 rounded-full"
+              href="">Sign
+              Up</a>
+          </div>
+        </nav>
+        <nav class="mobile lg:hidden flex justify-between">
+          <img src="images/logo.svg" alt="">
+          <img src="images/icon-hamburger.svg" alt="" class="ham">
+        </nav>
+      </nav>
+      <div class="lg:flex lg:flex-row-reverse justify-center items-center my-10 lg:my-20 lg:ml-36">
+        <div class="pl-5 overflow-hidden lg:overflow-visible"><img class="my-20 ml-24 scale-150 lg:scale-150"
+            src="images/illustration-working.svg" alt="">
+        </div>
+        <div class="px-5">
+          <div class="flex flex-col justify-center items-center lg:items-start text-center lg:text-left space-y-5">
+            <h1 class="text-4xl lg:text-8xl font-extrabold text-[#312e39]">
+              More than just shorter links</h1>
+            <p class="text-[#96949e] text-xl lg:text-2xl lg:mr-16">
+              Build your brand’s recognition and get detailed insights
+              on how your links are performing.</p>
+
+            <a class="bg-[#2bd1cf] hover:bg-[#9ce2e2] text-white text-xl font-bold py-5 lg:py-4 px-10 rounded-full"
+              href="">Get
+              Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shortner-option bg-[#3a3053] rounded-xl mx-5 lg:mx-36 overflow-hidden mt-20">
+      <div
+        class="bg-[url('images/bg-shorten-mobile.svg')] lg:bg-[url('images/bg-shorten-desktop.svg')] bg-contain lg:bg-cover  bg-no-repeat bg-right p-5 lg:p-16 flex flex-col lg:flex-row gap-5 ">
+        <input class="w-full h-14 p-5 rounded-md" type="text" placeholder="Shorten a link here...">
+        <button
+          class="w-full lg:w-3/12 bg-[#2bd1cf] hover:bg-[#9ce2e2] rounded-md h-14 p-5 text-white text-2xl font-bold flex items-center justify-center">Shorten
+          It!</button>
+      </div>
+    </section>
+
+    <section class="bg-[#f0f1f6] px-5 py-10 mt-20 flex flex-col justify-center items-center text-center gap-32">
+      <div class="">
+        <h1 class="text-2xl font-bold text-[#312e39] mb-5">Advanced Statistics</h1>
+        <p>Track how your links are performing across the web with our
+          advanced statistics dashboard.</p>
+      </div>
+
+      <div class="bg-white rounded-md p-5">
+        <h1 class="text-2xl font-bold text-[#312e39] mb-5">Brand Recognition</h1>
+        <p></p>Boost your brand recognition with each click. Generic links don’t
+        mean a thing. Branded links help instil confidence in your content.</p>
+      </div>
+      <div class="bg-white rounded-md p-5">
+        <h1 class="text-2xl font-bold text-[#312e39] mb-5">Detailed Records</h1>
+        <p> Gain insights into who is clicking your links. Knowing when and where
+          people engage with your content helps inform better decisions.</p>
+      </div>
+      <div class="bg-white rounded-md p-5">
+        <h1 class="text-2xl font-bold text-[#312e39] mb-5">Fully Customizable</h1>
+        <p>Improve brand awareness and content discoverability through customizable
+          links, supercharging audience engagement.</p>
+      </div>
+    </section>
+    <section
+      class="bg-[#3a3053]  py-24 flex flex-col items-center gap-5 bg-[url('images/bg-boost-mobile.svg')] lg:bg-[url('images/bg-boost-desktop.svg')]  bg-cover bg-right lg:bg-center bg-no-repeat">
+      <h1 class="text-3xl font-extrabold text-white">Boost your links today</h1>
+      <a class="bg-[#2bd1cf] hover:bg-[#9ce2e2] text-white text-xl font-bold py-5 lg:py-3 px-10 rounded-full"
+        href="">Get
+        Started</a>
+    </section>
+
+
+    <footer
+      class="bg-[#232027] flex flex-col lg:flex-row lg:justify-between items-center lg:items-start lg:px-36 gap-10 py-14">
+      <img class="img-w" src="images/logo-footer.svg" alt="">
+
+      <div class="text-lg flex flex-col text-center lg:text-left gap-4">
+        <h1 class="font-bold text-white">Features</h1>
+        <div class="flex flex-col text-[#bebcbf]">
+          <a class="hover:text-[#2bd1cf]" href="">Link Shortening</a>
+          <a class="hover:text-[#2bd1cf]" href="">Branded Links</a>
+          <a class="hover:text-[#2bd1cf]" href=""> Analytics</a>
+        </div>
+      </div>
+
+      <div class="text-lg flex flex-col text-center lg:text-left gap-4">
+        <h1 class="font-bold text-white">Resources</h1>
+        <div class="flex flex-col text-[#bebcbf]">
+          <a class="hover:text-[#2bd1cf]" href="">Blog</a>
+          <a class="hover:text-[#2bd1cf]" href="">Developers</a>
+          <a class="hover:text-[#2bd1cf]" href="">Support</a>
+        </div>
+      </div>
+
+      <div class="text-lg flex flex-col text-center lg:text-left gap-4">
+        <h1 class="font-bold text-white"> Company</h1>
+        <div class="flex flex-col text-[#bebcbf]">
+          <a class="hover:text-[#2bd1cf]" href="">About</a>
+          <a class="hover:text-[#2bd1cf]" href="">Our Team</a>
+          <a class="hover:text-[#2bd1cf]" href="">Careers</a>
+          <a class="hover:text-[#2bd1cf]" href="">Contact</a>
+        </div>
+      </div>
+
+      <div class="flex space-x-10 text-3xl">
+        <i class="fa-brands fa-facebook text-white hover:text-[#2bd1cf]"></i>
+        <i class="fa-brands fa-twitter text-white hover:text-[#2bd1cf]"></i>
+        <i class="fa-brands fa-pinterest text-white hover:text-[#2bd1cf]"></i>
+        <i class="fa-brands fa-instagram text-white hover:text-[#2bd1cf]"></i>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
