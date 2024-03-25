@@ -24,7 +24,14 @@
 <details>
   <summary>Tip Calculator App solution Links</summary>
   
-  - [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX).
+  - [Tip Calculator App challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX).
   - [Solution URL](https://github.com/NahidHassanOfficial/FrontendMentor-Challenges/tree/main/tip-calculator-app)
   - [Live Site URL](https://nahidhassanofficial.github.io/FrontendMentor-Challenges/tip-calculator-app/)
+</details>
+<details>
+  <summary>URL shortening API landing page solution Links</summary>
+  
+  - [URL shortening API landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G).
+  - [Solution URL](https://github.com/NahidHassanOfficial/FrontendMentor-Challenges/tree/main/URL-Shortner)
+  - [Live Site URL](https://nahidhassanofficial.github.io/FrontendMentor-Challenges/URL-Shortner/)
 </details>
