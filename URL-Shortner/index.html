@@ -33,8 +33,7 @@
           <div>
             <a class=" text-gray-400 hover:text-[#2bd1cf] text-md font-medium py-2 px-5 rounded-full" href="">Login</a>
             <a class="bg-[#2bd1cf] hover:bg-[#9ce2e2] text-white text-md font-medium py-2 px-5 rounded-full"
-              href="">Sign
-              Up</a>
+              href="">Sign Up</a>
           </div>
         </nav>
         <nav class="mobile lg:hidden flex justify-between">
@@ -55,8 +54,7 @@
               on how your links are performing.</p>
 
             <a class="bg-[#2bd1cf] hover:bg-[#9ce2e2] text-white text-xl font-bold py-5 lg:py-4 px-10 rounded-full"
-              href="">Get
-              Started</a>
+              href="">Get Started</a>
           </div>
         </div>
       </div>
@@ -65,34 +63,47 @@
     <section class="shortner-option bg-[#3a3053] rounded-xl mx-5 lg:mx-36 overflow-hidden mt-20">
       <div
         class="bg-[url('images/bg-shorten-mobile.svg')] lg:bg-[url('images/bg-shorten-desktop.svg')] bg-contain lg:bg-cover  bg-no-repeat bg-right p-5 lg:p-16 flex flex-col lg:flex-row gap-5 ">
-        <input class="w-full h-14 p-5 rounded-md" type="text" placeholder="Shorten a link here...">
+        <div class="w-full">
+          <input class="w-full h-14 p-5 rounded-md" type="text" placeholder="Shorten a link here...">
+          <p class="text-red-400 hidden">Please add a link</p>
+        </div>
         <button
           class="w-full lg:w-3/12 bg-[#2bd1cf] hover:bg-[#9ce2e2] rounded-md h-14 p-5 text-white text-2xl font-bold flex items-center justify-center">Shorten
           It!</button>
       </div>
     </section>
 
-    <section class="bg-[#f0f1f6] px-5 py-10 mt-20 flex flex-col justify-center items-center text-center gap-32">
-      <div class="">
-        <h1 class="text-2xl font-bold text-[#312e39] mb-5">Advanced Statistics</h1>
-        <p>Track how your links are performing across the web with our
+    <section
+      class="bg-[#f0f1f6] px-5 py-10 mt-20 flex flex-col justify-center items-center text-center lg:text-left gap-32">
+      <div class="text-center lg:flex flex-col items-center">
+        <h1 class="text-2xl lg:text-4xl font-bold text-[#312e39] mb-5">Advanced Statistics</h1>
+        <p class="lg:text-xl lg:w-2/3 text-gray-500">Track how your links are performing across the web with our
           advanced statistics dashboard.</p>
       </div>
+      <div class="flex flex-col lg:flex-row gap-32 lg:gap-10 lg:px-36">
+        <div class="bg-white rounded-md pt-20 pb-10 lg:px-10 lg:h-fit relative">
+          <div class="bg-[#3a3053] rounded-full w-20 h-20 flex justify-center items-center absolute top-0 left-1/2 lg:left-[20%] transform -translate-x-1/2 -translate-y-1/2
+        "> <img src="images/icon-brand-recognition.svg" alt=""></div>
 
-      <div class="bg-white rounded-md p-5">
-        <h1 class="text-2xl font-bold text-[#312e39] mb-5">Brand Recognition</h1>
-        <p></p>Boost your brand recognition with each click. Generic links don’t
-        mean a thing. Branded links help instil confidence in your content.</p>
-      </div>
-      <div class="bg-white rounded-md p-5">
-        <h1 class="text-2xl font-bold text-[#312e39] mb-5">Detailed Records</h1>
-        <p> Gain insights into who is clicking your links. Knowing when and where
-          people engage with your content helps inform better decisions.</p>
-      </div>
-      <div class="bg-white rounded-md p-5">
-        <h1 class="text-2xl font-bold text-[#312e39] mb-5">Fully Customizable</h1>
-        <p>Improve brand awareness and content discoverability through customizable
-          links, supercharging audience engagement.</p>
+          <h1 class="text-2xl font-bold text-[#312e39] mb-5">Brand Recognition</h1>
+          <p>Boost your brand recognition with each click. Generic links don’t
+            mean a thing. Branded links help instil confidence in your content.</p>
+        </div>
+        <div class="bg-white rounded-md pt-20 pb-10 lg:px-10 lg:h-fit relative lg:mt-12">
+          <div class="bg-[#3a3053] rounded-full w-20 h-20 flex justify-center items-center absolute top-0 left-1/2 lg:left-[20%]  transform -translate-x-1/2 -translate-y-1/2
+                  "> <img src="images/icon-detailed-records.svg" alt=""></div>
+
+          <h1 class="text-2xl font-bold text-[#312e39] mb-5">Detailed Records</h1>
+          <p> Gain insights into who is clicking your links. Knowing when and where
+            people engage with your content helps inform better decisions.</p>
+        </div>
+        <div class="bg-white rounded-md pt-20 pb-10 lg:px-10 lg:h-fit relative lg:mt-24">
+          <div class="bg-[#3a3053] rounded-full w-20 h-20 flex justify-center items-center absolute top-0 left-1/2 lg:left-[20%]  transform -translate-x-1/2 -translate-y-1/2
+                  "> <img src="images/icon-fully-customizable.svg" alt=""></div>
+          <h1 class="text-2xl font-bold text-[#312e39] mb-5">Fully Customizable</h1>
+          <p>Improve brand awareness and content discoverability through customizable
+            links, supercharging audience engagement.</p>
+        </div>
       </div>
     </section>
     <section
