@@ -65,24 +65,16 @@
           <div class="w-full">
             <input class="w-full h-14 p-5 rounded-md outline-none border-2 focus:border-[#2bd1cf]" type="text"
               placeholder="Shorten a link here...">
-            <p class="text-red-400 " id="empty-url">Please add a link</p>
+            <p class="text-red-400 invisible" id="empty-url">Please add a link</p>
           </div>
           <button
-            class="w-full lg:w-3/12 bg-[#2bd1cf] hover:bg-[#9ce2e2] rounded-md h-14 p-5 text-white text-2xl font-bold flex items-center justify-center">Shorten
+            class="w-full lg:w-3/12 bg-[#2bd1cf] hover:bg-[#9ce2e2] rounded-md h-14 p-5 text-white text-2xl font-bold flex items-center justify-center"
+            id="shorten-btn">Shorten
             It!</button>
         </div>
       </div>
       <div class="mt-5 mx-5 lg:mx-36 flex flex-col gap-3" id="shorten-urls">
-        <div
-          class="w-full  bg-white rounded-md h-fit lg:h-14 p-5 text-sm flex flex-col gap-2 lg:gap-0 lg:flex-row justify-between items-start lg:items-center">
-          <p class="text-gray-600">https://tailwindcss.com/docs/</p>
-          <div class="w-full lg:w-fit flex justify-between lg:space-x-3">
-            <p class="text-[#2bd1cf]">https://tailwindcss.com/</p>
-            <button
-              class="bg-[#2bd1cf] hover:bg-[#9ce2e2] w-fit h-fit px-3 py-1 rounded-md text-xs text-white">Copy</button>
-          </div>
-        </div>
-
+        <!-- urls here -->
       </div>
     </section>
 
@@ -170,6 +162,7 @@
       </div>
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
