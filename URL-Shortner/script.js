@@ -6,6 +6,17 @@ let shortenResultsDiv = document.getElementById("shorten-urls");
 let userUrl = "";
 let generatedUrl = "";
 
+function copyUrl() {
+  let copyBtns = document.querySelectorAll("[id='copy-btn']");
+  copyBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      navigator.clipboard.writeText(this.previousElementSibling.textContent);
+      btn.classList.add("bg-[#3a3053]");
+      btn.innerHTML = "copied!";
+    });
+  });
+}
+
 async function generateUrl(userUrl) {
   try {
     let response = await fetch(
@@ -24,6 +35,8 @@ async function generateUrl(userUrl) {
         </div>`;
 
     shortenResultsDiv.insertAdjacentHTML("afterbegin", shortenUrl);
+    //visit copy function
+    copyUrl();
   } catch (error) {
     console.error("Error fetching data:", error);
   }
