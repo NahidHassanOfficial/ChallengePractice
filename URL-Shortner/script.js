@@ -26,7 +26,7 @@ async function generateUrl(userUrl) {
 
     shortenUrl = `<div
           class="w-full  bg-white rounded-md h-fit lg:h-14 p-5 text-sm flex flex-col gap-2 lg:gap-0 lg:flex-row justify-between items-start lg:items-center">
-          <p class="text-gray-600">${userUrl}</p>
+          <p class="text-gray-600 break-all">${userUrl}</p>
           <div class="w-full lg:w-fit flex justify-between lg:space-x-3">
             <p class="text-[#2bd1cf]">${generatedUrl}</p>
             <button
