@@ -4,126 +4,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Challenges</title>
     <style>
+        * {
+            text-align: center;
+        }
+
         body {
+            font-family: 'Open Sans', sans-serif;
             margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #eee;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .container {
-            max-width: 600px;
-            margin: 50px auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
+        .navbar-logo img {
+            height: 30px;
         }
 
-        ol {
-            list-style-type: decimal;
-            padding-left: 20px;
+        .navbar-profile a {
+            background-image: linear-gradient(to left, rgba(63, 94, 251, 0.7), rgba(252, 70, 107, 0.7));
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
         }
 
-        li {
-            margin-bottom: 10px;
-            padding: 10px;
-            background-color: #f9f9f9;
+        .navbar-profile a:hover {
+            background-image: linear-gradient(to right, rgba(63, 94, 251, 0.7), rgba(252, 70, 107, 0.7));
+        }
+
+        .card {
+            display: inline-block;
+            position: relative;
+            max-width: 400px;
+            height: 400px;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+            margin: 30px;
+        }
+
+        .image-container {
+            position: relative;
+            height: 70%;
+            overflow: hidden;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+        }
+
+        .image-container:hover .image {
+            transform: scale(1.1);
+        }
+
+        .text {
+            background-image: linear-gradient(rgba(63, 94, 251, 0.9), rgba(252, 70, 107, 0.9));
+            border-radius: 30px;
+            position: absolute;
+            top: 55%;
+            left: -5px;
+            height: 65%;
+            width: 108%;
+            transform: skew(19deg, -9deg);
+        }
+
+        .live-btn {
+            position: absolute;
+            color: #fff;
+            text-decoration: none;
+            right: 30px;
+            bottom: 10%;
+            padding: 10px 20px;
+            border: 1px solid #fff;
             border-radius: 5px;
+            animation: button-anim 2s ease 0s infinite normal forwards;
         }
 
-        li span {
-            color: lightcoral;
-            font-weight: bold;
-            cursor: pointer;
+        .live-btn:hover {
+            animation: none;
         }
 
-        details {
-            margin-bottom: 20px;
+        @keyframes button-anim {
+            0% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translate(-2px, 2px);
+            }
+
+            40% {
+                transform: translate(-2px, -2px);
+            }
+
+            60% {
+                transform: translate(2px, 2px);
+            }
+
+            80% {
+                transform: translate(2px, -2px);
+            }
+
+            100% {
+                transform: translate(0);
+            }
         }
 
-        summary {
-            color: darkcyan;
-            cursor: pointer;
-            font-weight: bold;
-            padding: 10px;
-            background-color: #f0f0f0;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-            list-style-type: none;
-            /* Hide the default marker */
+        .technology,
+        .title {
+            position: absolute;
+            color: #fff;
+            left: 30px;
+            bottom: 25%;
         }
 
-        summary:hover {
-            background-color: #e0e0e0;
+        .title {
+            font-weight: 900;
+            bottom: 30%;
         }
 
-        summary::before {
-            content: "\25BA";
-            margin-right: 5px;
-            transition: transform 0.3s;
-        }
 
-        details[open] summary::before {
-            content: "\25BC";
-            transform: rotate(90deg);
-        }
+        @media (max-width: 768px) {
+            .card {
+                width: 90%;
+            }
 
-        summary::-webkit-details-marker {
-            display: none;
+            .navbar-logo img {
+                height: 25px;
+            }
+
+            .navbar-profile a {
+                padding: 8px 5px;
+                border-radius: 5px;
+            }
+
+            .card {
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
     </style>
+    <title>FrontendMentor Solutions</title>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Practice Challenges</h1>
 
-        <details>
-            <summary>Frontend Mentor</summary>
-            <ol>
-                <li>
-                    <span
-                        onclick="window.location.href='https://nahidhassanofficial.github.io/FrontendMentor-Challenges/Age%20Calculator/'">
-                        Age Calculator App solution
-                    </span>
-                </li>
-                <li>
-                    <span
-                        onclick="window.location.href='https://nahidhassanofficial.github.io/FrontendMentor-Challenges/interactive-rating-component/'">
-                        Interactive Rating Component App solution
-                    </span>
-                </li>
-                <li>
-                    <span
-                        onclick="window.location.href='https://nahidhassanofficial.github.io/FrontendMentor-Challenges/blogr-landing-page/'">
-                        Blogr Landing Page solution
-                    </span>
-                </li>
-                <li>
-                    <span
-                        onclick="window.location.href='https://nahidhassanofficial.github.io/FrontendMentor-Challenges/tip-calculator-app/'">
-                        Tip Calculator App solution
-                    </span>
-                </li>
-                <li>
-                    <span
-                        onclick="window.location.href='https://nahidhassanofficial.github.io/FrontendMentor-Challenges/URL-Shortner/'">
-                        URL shortening API landing page solution
-                    </span>
-                </li>
-            </ol>
-        </details>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-logo">
+                <img src="src/screenshots/frontendmentor-logo.svg" alt="Frontend Mentor Logo">
+            </div>
+            <div class="navbar-profile">
+                <a href="https://www.frontendmentor.io/profile/NahidHassanOfficial">Check Profile</a>
+            </div>
+        </div>
+    </nav>
 
+    <main>
+        <div class="card">
+            <div class="image-container">
+                <img src="src/screenshots/url-shortner.webp" alt="" class="image">
+            </div>
+            <div class="text"></div>
 
-    </div>
+            <div class="title">
+                <p>URL Shortner App (Landing Page)</p>
+            </div>
+            <div class="technology">
+                <p>#Tailwind #Javascript #API</p>
+            </div>
+            <a class="live-btn" href="https://nahidhassanofficial.github.io/FrontendMentor-Challenges/URL-Shortner/"
+                target="_self">Live App</a>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src="src/screenshots/bill-splitter.png" alt="" class="image">
+            </div>
+            <div class="text"></div>
+
+            <div class="title">
+                <p>Tip Calculator / Splitter App</p>
+            </div>
+            <div class="technology">
+                <p>#Tailwind #Javascript</p>
+            </div>
+
+            <a class="live-btn"
+                href="https://nahidhassanofficial.github.io/FrontendMentor-Challenges/tip-calculator-app/"
+                target="_self">Live App</a>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src="src/screenshots/blogr-landing.jpg" alt="" class="image">
+            </div>
+            <div class="text"></div>
+
+            <div class="title">
+                <p>Blogr Landing Page</p>
+            </div>
+            <div class="technology">
+                <p>#Tailwind</p>
+            </div>
+
+            <a class="live-btn"
+                href="https://nahidhassanofficial.github.io/FrontendMentor-Challenges/blogr-landing-page/"
+                target="_self">Live App</a>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src="src/screenshots/interactive-rating.png" alt="" class="image">
+            </div>
+            <div class="text"></div>
+
+            <div class="title">
+                <p>Interactive Rating Component App</p>
+            </div>
+            <div class="technology">
+                <p>#Tailwind #Javascript</p>
+            </div>
+
+            <a class="live-btn"
+                href="https://nahidhassanofficial.github.io/FrontendMentor-Challenges/interactive-rating-component/"
+                target="_self">Live App</a>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src="src/screenshots/age-calculator.png" alt="" class="image">
+            </div>
+            <div class="text"></div>
+
+            <div class="title">
+                <p>Age Calculator App</p>
+            </div>
+            <div class="technology">
+                <p>#CSS #Javascript</p>
+            </div>
+
+            <a class="live-btn" href="https://nahidhassanofficial.github.io/FrontendMentor-Challenges/Age%20Calculator/"
+                target="_self">Live App</a>
+        </div>
+    </main>
 </body>
 
 </html>
