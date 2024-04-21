@@ -3,7 +3,6 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Shortner from "./components/Shortner";
 import Statistics from "./components/Statistics";
-import "./main.css";
 
 const App = () => {
   return (
