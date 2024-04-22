@@ -1,20 +1,39 @@
+import { NavLink } from "react-router-dom";
 const Head = () => {
   return (
     <div>
       <nav className="px-5 ">
         <nav className="desktop hidden lg:flex justify-between px-36">
           <div className="flex space-x-10">
-            <img src="images/logo.svg" alt=""></img>
+            <NavLink to="/">
+              <img src="images/logo.svg" alt=""></img>
+            </NavLink>
+
             <div className="text-gray-400 text-md font-medium flex space-x-5">
-              <a className="hover:text-gray-900" href="">
+              <NavLink
+                to="/features"
+                className={({ isActive }) =>
+                  isActive ? "text-[#2bd1cf]" : " hover:text-gray-900"
+                }
+              >
                 Features
-              </a>
-              <a className="hover:text-gray-900" href="">
+              </NavLink>
+              <NavLink
+                to="/pricing"
+                className={({ isActive }) =>
+                  isActive ? "text-[#2bd1cf]" : "hover:text-gray-900"
+                }
+              >
                 Pricing
-              </a>
-              <a className="hover:text-gray-900" href="">
+              </NavLink>
+              <NavLink
+                to="/resources"
+                className={({ isActive }) =>
+                  isActive ? "text-[#2bd1cf]" : "hover:text-gray-900"
+                }
+              >
                 Resources
-              </a>
+              </NavLink>
             </div>
           </div>
           <div>
