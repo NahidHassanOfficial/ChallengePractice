@@ -33,5 +33,6 @@
   
   - [URL shortening API landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G).
   - [Solution URL](https://github.com/NahidHassanOfficial/FrontendMentor-Challenges/tree/main/URL-Shortner)
+  - [Solution URL (React JS)](https://github.com/NahidHassanOfficial/FrontendMentor-Challenges/tree/main/URL-Shortner%20(React-JS))
   - [Live Site URL](https://nahidhassanofficial.github.io/FrontendMentor-Challenges/URL-Shortner/)
 </details>
