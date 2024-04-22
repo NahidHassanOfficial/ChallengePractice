@@ -14,13 +14,13 @@ git clone <repository_url>
 cd "URL-Shortner (React-JS)"
 ```
 
-Step 3: Install dependencies
+### Step 3: Install dependencies
 
 ```bash
 npm install
 ```
 
-Step 4: Run the development server
+### Step 4: Run the development server
 ```bash
 npm run dev
 ```
