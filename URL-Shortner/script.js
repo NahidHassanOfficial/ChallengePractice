@@ -6,18 +6,22 @@ let shortenResultsDiv = document.getElementById("shorten-urls");
 let userUrl = "";
 let generatedUrl = "";
 
-let currentSessionUrls = [];
+let storedUrls = [];
 
-//Retrive session storage
+//Retrive old urls if exists and truncate over 10
 (() => {
-  let storedUrls = sessionStorage.getItem("ShortlyUrls");
+  storedUrls = JSON.parse(localStorage.getItem("ShortlyUrls")) || [];
   if (storedUrls) {
-    currentSessionUrls = JSON.parse(storedUrls);
-    currentSessionUrls.forEach((url) => {
+    //truncate the storage data over 10 on new insertion
+    if (storedUrls.length > 10) {
+      storedUrls = storedUrls.slice(0, 10);
+    }
+
+    for (let index = storedUrls.length - 1; index >= 0; index--) {
       shortenUrl = `<div class="w-full  bg-white rounded-md h-fit lg:h-14 p-5 text-sm flex flex-col gap-2 lg:gap-0 lg:flex-row justify-between items-start lg:items-center">
-      <p class="text-gray-600 break-all">${url.ShortenUrl}</p>
+      <p class="text-gray-600 break-all">${storedUrls[index].userUrl}</p>
       <div class="w-full lg:w-fit flex justify-between lg:space-x-3">
-        <p class="text-[#2bd1cf]">${url.generatedUrl}</p>
+        <p class="text-[#2bd1cf]">${storedUrls[index].generatedUrl}</p>
         <button
           class="bg-[#2bd1cf] hover:bg-[#9ce2e2] w-fit h-fit px-3 py-1 rounded-md text-xs text-white"
           id="copy-btn"
@@ -28,7 +32,7 @@ let currentSessionUrls = [];
     </div>`;
 
       shortenResultsDiv.insertAdjacentHTML("afterbegin", shortenUrl);
-    });
+    }
   }
 })();
 
@@ -44,14 +48,14 @@ function copyUrl() {
   });
 }
 
-//store urls in session
-function StoreCurrentSessionUrls(userUrl, generatedUrl) {
-  currentSessionUrls.push({
-    ShortenUrl: userUrl,
+//store urls in localStorage with key ShortlyUrls
+function storeUrls() {
+  storedUrls.unshift({
+    userUrl: userUrl,
     generatedUrl: generatedUrl,
   });
 
-  sessionStorage.setItem("ShortlyUrls", JSON.stringify(currentSessionUrls));
+  localStorage.setItem("ShortlyUrls", JSON.stringify(storedUrls));
 }
 
 async function generateUrl(userUrl) {
@@ -61,7 +65,7 @@ async function generateUrl(userUrl) {
     );
     generatedUrl = await response.text();
 
-    StoreCurrentSessionUrls(userUrl, generatedUrl);
+    storeUrls();
 
     shortenUrl = `<div
           class="w-full  bg-white rounded-md h-fit lg:h-14 p-5 text-sm flex flex-col gap-2 lg:gap-0 lg:flex-row justify-between items-start lg:items-center">
